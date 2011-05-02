@@ -1,0 +1,42 @@
+# Path to your oh-my-zsh configuration.
+export ZSH=$HOME/.oh-my-zsh
+
+# Set to the name theme to load.
+# Look in ~/.oh-my-zsh/themes/
+export ZSH_THEME="yumike"
+
+# Set to this to use case-sensitive completion
+export CASE_SENSITIVE="true"
+
+# Comment this out to disable weekly auto-update checks
+# export DISABLE_AUTO_UPDATE="true"
+
+# Uncomment following line if you want to disable colors in ls
+# export DISABLE_LS_COLORS="true"
+
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Example format: plugins=(rails git textmate ruby lighthouse)
+plugins=()
+
+source $ZSH/oh-my-zsh.sh
+unsetopt correct_all
+
+# Customize to your needs...
+#PROMPT='%{$fg_bold[red]%}➜ %{$fg_bold[green]%}%p %{$fg[cyan]%}${PWD/#$HOME/~} %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}'
+export PATH=/usr/local/bin:/usr/local/share/python:/opt/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Projects
+export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
+export VIRTUALENVWRAPPER_LOG_DIR=$WORKON_HOME
+source "/usr/local/share/python/virtualenvwrapper.sh"
+
+export COPYFILE_DISABLE=true
+export VIRTUALENV_USE_DISTRIBUTE=true
+export PIP_REQUIRE_VIRTUALENV=true
+
+export MACOSX_DEPLOYMENT_TARGET=10.6
+
+alias feature='git flow feature'
