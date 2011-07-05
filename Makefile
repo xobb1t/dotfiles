@@ -21,3 +21,6 @@ install-virtualenvwrapper:
 
 install-rvm:
 	[[ -d ~/.rvm ]] || bash < <(curl -s https://rvm.beginrescueend.com/install/rvm)
+
+install-ack:
+	ln -fs `pwd`/ack/ackrc ~/.ackrc
