@@ -4,3 +4,7 @@
 PS1="$_OLD_VIRTUAL_PS1"
 _OLD_RPROMPT="$RPTOMPT"
 RPROMPT="workon %{${fg[white]}%}`basename \"$VIRTUAL_ENV\"`%{$reset_color%}"
+
+export GEM_HOME="$VIRTUAL_ENV/gems"
+export GEM_PATH=""
+export PATH="$VIRTUAL_ENV/gems/bin:$PATH"
