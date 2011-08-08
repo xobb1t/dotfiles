@@ -22,8 +22,7 @@ source $ZSH/oh-my-zsh.sh
 unsetopt correct_all
 
 # Customize to your needs...
-#PROMPT='%{$fg_bold[red]%}➜ %{$fg_bold[green]%}%p %{$fg[cyan]%}${PWD/#$HOME/~} %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}'
-export PATH=/usr/local/bin:/usr/local/share/python:/opt/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
+export PATH=node_modules/.bin:/usr/local/bin:/usr/local/share/python:/opt/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
@@ -41,4 +40,5 @@ export NODE_PATH=/usr/local/lib/node
 
 export MACOSX_DEPLOYMENT_TARGET=10.6
 
+alias serve='python -mSimpleHTTPServer'
 alias feature='git flow feature'
