@@ -34,7 +34,6 @@ source "/usr/local/share/python/virtualenvwrapper.sh"
 
 export COPYFILE_DISABLE=true
 export VIRTUALENV_USE_DISTRIBUTE=true
-export PIP_REQUIRE_VIRTUALENV=true
 
 export NODE_PATH=/usr/local/lib/node
 
