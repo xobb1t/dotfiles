@@ -28,7 +28,6 @@ export PATH=node_modules/.bin:/usr/local/bin:/usr/local/share/python:/opt/local/
 
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Projects
-export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
 export VIRTUALENVWRAPPER_LOG_DIR=$WORKON_HOME
 source "/usr/local/share/python/virtualenvwrapper.sh"
 
