@@ -1,2 +1,3 @@
 --ignore-dir=.tox
 --type-set=rst=.rst
+--type-set=styl=.styl
