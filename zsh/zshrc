@@ -33,6 +33,7 @@ source "/usr/local/share/python/virtualenvwrapper.sh"
 
 export COPYFILE_DISABLE=true
 export VIRTUALENV_USE_DISTRIBUTE=true
+export PYTHONDONTWRITEBYTECODE=true
 
 export NODE_PATH=/usr/local/lib/node
 
@@ -40,3 +41,4 @@ export MACOSX_DEPLOYMENT_TARGET=10.7
 
 alias serve='python -mSimpleHTTPServer'
 alias feature='git flow feature'
+alias mkproject='mkproject --distribute'
