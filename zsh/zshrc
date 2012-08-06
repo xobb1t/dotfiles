@@ -23,6 +23,7 @@ unsetopt correct_all
 
 # Customize to your needs...
 export PATH=node_modules/.bin:/usr/local/bin:/usr/local/share/python:/opt/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
+export PATH=/Applications/Postgres.app/Contents/MacOS/bin:$PATH
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
@@ -37,8 +38,11 @@ export PYTHONDONTWRITEBYTECODE=true
 
 export NODE_PATH=/usr/local/lib/node
 
-export MACOSX_DEPLOYMENT_TARGET=10.7
+export MACOSX_DEPLOYMENT_TARGET=10.8
 
 alias serve='python -mSimpleHTTPServer'
 alias feature='git flow feature'
 alias mkproject='mkproject --distribute'
+if [[ "$TERM" != "screen-256color" ]]; then
+  tmux attach-session -t "$USER" || tmux new-session -s "$USER"
+fi
